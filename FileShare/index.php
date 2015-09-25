@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <h1 id="header">FileShare<img src="folder.png" width="60" height="50" id="folderImage"></h1>
+    <h1 id="header">FileShare<img src="images/folder.png" width="60" height="50" id="folderImage"></h1>
 
     <div id="login">
       <h2>Login</h2>
