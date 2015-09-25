@@ -11,7 +11,7 @@
       $username = $_POST['username'];
       $password = $_POST['password'];
 
-      include('databaseAccess/loginDatabase.php');
+      include('databaseLogin/loginDatabase.php');
 
       mysql_query("select username from login where username = '$username'");
       $rows = mysql_num_rows();

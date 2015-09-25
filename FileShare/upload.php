@@ -10,7 +10,7 @@
       header( 'Location: http://localhost/FileShare/index.php');
     }
     else {
-      // Redirect to a page with an error
+      // Redirect to a page with an error.
       die("The size of the file is very large.");
     }
   }

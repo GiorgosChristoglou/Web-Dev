@@ -11,7 +11,7 @@
       $username = $_POST['username'];
       $password = $_POST['password'];
 
-      include ('databaseAccess/loginDatabase.php');
+      include ('databaseLogin/loginDatabase.php');
 
       // To protect MySQL injection for Security purpose.
       $username = stripslashes($username);

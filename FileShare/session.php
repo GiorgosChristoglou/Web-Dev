@@ -1,5 +1,5 @@
 <?php
-  include('databaseAccess/loginDatabase.php');
+  include('databaseLogin/loginDatabase.php');
   session_start();
 
   $user_check = $_SESSION['loginUser'];
