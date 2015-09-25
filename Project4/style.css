@@ -1,0 +1,71 @@
+#header {
+  text-align: center;
+  font-size: 300%;
+}
+
+#headerImage {
+  vertical-align: left;
+}
+
+body {
+  min-width: 800px;
+}
+
+#folder {
+  background-image: url('folder.png');
+  width: 50px;
+  height: 40px; 
+  display: inline-block;
+  background-position: right;
+  background-repeat: none;
+}
+
+div {
+  background-color: #FEFFED;
+  border: 2px solid #ccc;
+  width: 25%;
+  height: 55%;
+}
+
+#login {
+  margin-left: 15%;
+  margin-right: 5%;
+  float: left;
+  padding: 1% 2% 2% 1%;
+}
+
+#new_account {
+  margin-right: 15%;
+  margin-left: 5%;
+  float: left;
+  padding: 1% 2% 2% 1%;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type=text],input[type=password] {
+  width: 99.5%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  height: 10%;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #FFBC00;
+  color: #fff;
+  border: 2px solid #FFCB00;
+  padding: 10px;
+  font-size:20px;
+  cursor:pointer;
+  border-radius:5px;
+  margin-bottom:15px;
+}
+
+.error {
+  color: red;
+}

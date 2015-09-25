@@ -1,0 +1,36 @@
+input[type=submit] {
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#list {
+  font-size: 125%;
+  border: 1px solid black;
+  padding: 10px;
+  list-style-position: inside;
+  width: 400px;
+  background-color: #ccc;
+}
+
+.files {
+  border: 1px dashed blue;
+  width: 400px;
+  padding: 1% 1% 1% 1%;
+}
+
+#logoutButton {
+  font-size: 125%;
+  margin-top: 5%;
+  text-align: left;
+}
+
+#header {
+  color:blue;
+}
+
+#userImage {
+  vertical-align: middle;
+}
+
+
+
