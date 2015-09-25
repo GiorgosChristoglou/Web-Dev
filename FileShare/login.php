@@ -20,9 +20,7 @@
       $password = mysql_real_escape_string($password);
 
       // SQL query to fetch information of registered users.
-
       $query = mysql_query("select * from login where password = '$password' AND username = '$username'");
-
       $rows = mysql_num_rows($query);
 
       if ($rows == 1) {

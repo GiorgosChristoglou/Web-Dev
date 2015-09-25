@@ -1,6 +1,5 @@
 <?php
   $error = '';
-
   if (isset($_POST['submit'])) {
     if (empty($_POST["username"]) || empty($_POST["password"]) || empty($_POST["confirmPassword"])) {
       $error = 'Username of Password is invalid';
@@ -15,7 +14,6 @@
       include('databaseAccess/loginDatabase.php');
 
       mysql_query("select username from login where username = '$username'");
-
       $rows = mysql_num_rows();
 
       if ($rows != 0) {
@@ -25,7 +23,6 @@
          mysql_query("insert into login (username, password) values 
       ('$username', '$password')");
       }
-
     }
     header("Location: index.php");
   }
