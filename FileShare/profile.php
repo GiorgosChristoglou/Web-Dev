@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>Home page</title> 
-    <link rel="stylesheet" type="text/css" href="accountStyle.css">
+    <link rel="stylesheet" type="text/css" href="account_style.css">
     <script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>

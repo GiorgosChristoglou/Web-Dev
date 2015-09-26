@@ -13,8 +13,8 @@
 
       include('databaseLogin/loginDatabase.php');
 
-      mysql_query("select username from login where username = '$username'");
-      $rows = mysql_num_rows();
+      $res = mysql_query("select username from login where username = '$username'");
+      $rows = mysql_num_rows($res);
 
       if ($rows != 0) {
         $error = 'There is already a user with that username';

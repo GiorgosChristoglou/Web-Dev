@@ -44,7 +44,7 @@
 
     <div id="new_account">
       <h2>Create a new account</h2>
-      <form action="newaccount.php" method="post"
+      <form action="new_account.php" method="post"
       onsubmit="return checkNewAccountDetails();">
         <p>Username: <input type="text" name="username" 
         id="newUsername"></p>
