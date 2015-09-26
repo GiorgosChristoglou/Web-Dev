@@ -4,13 +4,13 @@
 <html>
   <head>
     <title>Home page</title> 
-    <link rel = "stylesheet" type  = "text/css" href  = "accountStyle.css">
+    <link rel="stylesheet" type="text/css" href="accountStyle.css">
     <script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <?php
-      echo "<h1 id='header'>Hello $login_session <img src=user.jpg id='userImage' width='50' height='60'></h1>";
+      echo "<h1 id='header'>Hello $login_session <img src=images/user.jpg id='userImage' width='50' height='60'></h1>";
     ?>
 
     <div class="files">
