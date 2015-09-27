@@ -14,6 +14,12 @@
 
       include('databaseLogin/loginDatabase.php');
 
+      // To protect MySQL injection for Security purpose.
+      $username = stripslashes($username);
+      $username = mysql_real_escape_string($username);
+
+      // Check whether there is another user with the same username
+      // in the database.
       $res = mysql_query("select username from login where username = '$username'");
       $rows = mysql_num_rows($res);
 
