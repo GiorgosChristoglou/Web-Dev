@@ -24,12 +24,12 @@ function checkNewAccountDetails() {
   var username = document.getElementById("newUsername");
   var password = document.getElementById("newPassword");
 
-  if ( username.value.length < 4 ) {
+  if ( username.value.length < 4 || username.value.length > 16) {
     alert("Username must have 4 to 16 characters size");
     return false;
   }
 
-  if ( password.value.length < 8 ) {
+  if ( password.value.length < 8 || password.value.length > 16) {
     alert("Password must have 8 to 16 characters size");
     return false;
   }
@@ -37,12 +37,14 @@ function checkNewAccountDetails() {
   return true;
 }
 
-$('#logoutButton').on('mouseover', function() {
-  $('#logoutButton').css( {
-    'background-color' : '#ecc'
+$(window).ready(function() {
+  $('#logoutButton').on('mouseover', function() {
+    $('#logoutButton').css( {
+      'background-color' : '#ecc'
+    });
   });
-});
 
-$('#logoutButton').on('mouseleave', function() {
-   $('#logoutButton').css('background-color', '#ccc');
+  $('#logoutButton').on('mouseleave', function() {
+    $('#logoutButton').css('background-color', '#ccc');
+  });
 });
