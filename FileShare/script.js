@@ -1,10 +1,3 @@
-function checkFile() {
-  /* if ( document.getElementById('file')) {
-      
-  } */
-  return true;
-}
-
 // Checks whether the username is empty or not.
 function checkUsername() {
   var username = document.getElementById("username");

@@ -4,7 +4,7 @@
 
   if (isset( $_POST['submit'])) {
     if (empty ($_POST['username'] || empty($_POST['password']))) {
-      $error = 'Username of Password is invalid';
+      $error = 'Username or Password is invalid';
     }
     else {
       // Define username and password.
@@ -29,9 +29,11 @@
       }
       else {
         $error = 'Username of Password invalid';
-        header("Location: index.php");
       }
       mysql_close($connection);
     }
+  }
+  if ($error !== '') {
+    die($error);
   }
 ?>

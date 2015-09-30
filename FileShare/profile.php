@@ -15,8 +15,8 @@
 
     <div class="files">
       <h2>Upload a File:</h2>
-      <form action="upload.php" method="post" 
-        enctype="multipart/form-data" onsubmit="return checkFile();">
+      <form action="upload.php" method="post"
+        enctype="multipart/form-data">
         <input type="file" name="fileName"/>
         <input type="submit" value="upload"/>
       </form>
@@ -44,7 +44,7 @@
       <select name="uploadedFiles">
         <?php 
           $handle = opendir('/var/www/html/uploads/');
-          while ( false !== ( $file = readdir($handle) ) ) { 
+          while ( false !== ( $file = readdir($handle) ) ) {
             if ( $file != "." && $file != ".." ) {
               echo "<option value=" . "$file" .">$file</option>";
             }
